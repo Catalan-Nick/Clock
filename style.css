@@ -10,7 +10,9 @@ height: 100vh;
 background: rgb(105, 105, 105);
 }
 .center {
-    
+    background-image: url("https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80");
+    background-position: center;
+    background-size: cover;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -23,5 +25,7 @@ background: rgb(105, 105, 105);
     font-size: xx-large;
 }
 img{
+    width: 200px;
     height: 200px;
+    border-radius: 50%;
 }
