@@ -9,15 +9,24 @@
 </head>
 <body>
     <div class="main">
-        <div class="switch-box" >
-            <label class="switch" >
-                <input id="checkbox" type="checkbox" onclick="formatClock()">
-                <span class="slider round"></span>
-            </label>
-            <div class="switch-label" id="s-label">
-            
+        <nav>
+            <div class="day-night-box">
+                <label class="switch" >
+                    <input id="sun-checkbox" type="checkbox" onclick="sunlight()">
+                    <span class="slider round">
+                    </span>
+                </label>
+                <div class="day-label" ></div>
             </div>
-        </div>
+            <div class="switch-box" >
+                <label class="switch" >
+                    <input id="checkbox" type="checkbox" onclick="formatClock()">
+                    <span class="slider round"></span>
+                </label>
+                <div class="switch-label" id="s-label">
+                </div>
+            </div>
+        </nav>
         <div class="center center-background large" id="clock">
         </div>
     </div>

@@ -1,13 +1,15 @@
 function formatClock(){
     let format = 24;
-    document.querySelector("#s-label").innerHTML = "Change to 12hr clock";
+    document.getElementById("s-label").innerText = "Change to 12hr clock";
     if (document.getElementById('checkbox').checked){
         format = 12;
-        document.querySelector("#s-label").innerHTML = "Change to 24hr clock";
+        document.getElementById("s-label").innerText = "Change to 24hr clock";
     }
     return format;
 }
+function sunlight(){
 
+}
 function currentTime(){
     let date = new Date();
     let hours = date.getHours();
