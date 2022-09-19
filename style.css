@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    background: rgb(105, 105, 105);
+    background-image: url('https://images.unsplash.com/photo-1516410290616-fb59b7994a51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80');
+    background-size: cover;
+    /* border: 1px solid red; */
 
 }
 .main{
@@ -10,7 +12,16 @@ flex-wrap: wrap;
 justify-content: center;
 
 }
+nav{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+nav, nav div, label {
+    background-image: url('https://images.unsplash.com/photo-1566305977571-5666677c6e98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGdyZXl8ZW58MHx8MHx8&auto=format&fit=crop&w=1800&q=60');
 
+}
 .center {
     width: 333px;
     height: 333px;
@@ -28,14 +39,18 @@ justify-content: center;
   }
 .large{
     font-size: xx-large;
+    font-weight: 900;
+    text-shadow: 1px 3px rgb(105, 105, 105);
+}
+.day-night-box, .switch-box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1em;
 }
 
 .switch-box{
-    display: flex;
     justify-content: end;
-    flex-basis: 100%;
-    align-items: center;
-    margin: 1em;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -47,12 +62,11 @@ justify-content: center;
   
 /* Hide default HTML checkbox */
 .switch input {
-opacity: 0;
-width: 0;
-height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
-
-.switch-label{
+.day-label, .switch-label{
     margin-left: 1em;
     font-size: large;
 }
